@@ -4,11 +4,11 @@
 */
 
 :root {
-  --title-color: #DB00FF;
+  --title-color: #db00ff;
   --subtitle-color: #000028;
-  --text-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --lead-color: #FF0070;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --lead-color: #ff0070;
   --background: url(../images/cover-image-dark.png);
   --background-color: #000028;
 }

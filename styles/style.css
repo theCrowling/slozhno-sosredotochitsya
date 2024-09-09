@@ -71,6 +71,16 @@
   block-size: 26px;
 }
 
+.header__theme-menu-button:hover {
+  border: 1px solid var(--lead-color-hover);
+}
+
+.header__theme-menu-button:focus-visible {
+  appearance: none;
+  outline: none;
+  border-bottom: 1px solid var(--lead-color);
+}
+
 .header__theme-menu-button_active {
   border: 1px solid var(--lead-color);
   pointer-events: none;
@@ -156,8 +166,8 @@
 @media (width <= 575px) {
   .header__title {
     right: 0;
-    font-size: 116px;
     width: 100%;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }
 
@@ -192,12 +202,12 @@
 
 /*стили основного контента*/
 .main {
-  margin: 60px 20px 60px;
+  padding: 60px 20px 60px;
 }
 
 @media (width <= 575px) {
   .main {
-    margin: 40px 10px 40px;
+    padding: 40px 10px 40px;
   }
 }
 
@@ -206,10 +216,23 @@
   text-shadow: 2px 2px 0px var(--accent-color);
 }
 
+.text-link:hover {
+  border-bottom: 1px solid;
+}
+
+.text-link:focus-visible {
+  appearance: none;
+  outline: 1px solid var(--text-color);
+}
+
 .container {
   display: grid;
   gap: 20px;
   margin-block-end: 80px;
+}
+
+.container:last-of-type {
+  margin-block-end: 0;
 }
 
 @media (width <= 575px) {
@@ -220,10 +243,6 @@
   .container:last-of-type {
     gap: 10px;
   }
-}
-
-.container:last-of-type {
-  margin-block-end: 0;
 }
 
 .container__title {
@@ -254,7 +273,6 @@
 @media (width <= 575px) {
   .why {
     grid-template-columns: 1fr;
-    grid-template-rows: max-content;
   }
 
   .why__title {
@@ -289,7 +307,6 @@
 @media (width <= 575px) {
   .what {
     grid-template-columns: 1fr;
-    grid-template-rows: max-content;
   }
 
   .what__title {
@@ -318,7 +335,6 @@
 @media (width <= 575px) {
   .how {
     grid-template-columns: 1fr;
-    grid-template-rows: max-content;
   }
 
   .how__title {
@@ -356,10 +372,10 @@
 }
 
 .picture__image {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
 @media (width <= 575px) {
@@ -389,6 +405,14 @@
   min-block-size: 768px;
 }
 
+.footer__title {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  line-height: 82.5%;
+  text-shadow: 2px 2px 0px #ff0070;
+}
+
 @media (width <= 800px) {
   .footer {
     min-block-size: 1024px;
@@ -400,18 +424,8 @@
     padding: 10px;
     min-block-size: 668px;
   }
-}
 
-.footer__title {
-  color: var(--title-color);
-  font-weight: 700;
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  line-height: 82.5%;
-  text-shadow: 2px 2px 0px #ff0070;
-}
-
-@media (width <= 575px) {
   .footer__title {
-    font-size: 116px;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }

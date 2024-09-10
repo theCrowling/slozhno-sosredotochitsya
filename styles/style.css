@@ -155,7 +155,6 @@
   right: 20px;
   grid-column: span 1;
   justify-self: flex-start;
-  width: calc(100% + 20px + 20px);
   color: var(--title-color);
   font-weight: 700;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -218,6 +217,10 @@
 
 .text-link:hover {
   border-bottom: 1px solid;
+}
+
+.text-link:focus {
+  outline: none;
 }
 
 .text-link:focus-visible {
@@ -376,6 +379,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 @media (width <= 575px) {

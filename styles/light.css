@@ -3,7 +3,7 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root.theme-light {
+/*:root.theme-light {
   --title-color: #ffc2e6;
   --subtitle-color: #353430;
   --text-color: #353430;
@@ -12,7 +12,7 @@
   --lead-color-hover: #32312d66;
   --background: url(../images/cover-image-light.png);
   --background-color: #fff1f7;
-}
+}*/
 
 /* Остальные стили */
 

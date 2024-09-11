@@ -3,7 +3,7 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root.theme-dark {
+/*:root.theme-dark {
   --title-color: #db00ff;
   --subtitle-color: #000028;
   --text-color: #f1b2ce;
@@ -12,7 +12,7 @@
   --lead-color-hover: #ff007066;
   --background: url(../images/cover-image-dark.png);
   --background-color: #000028;
-}
+}-убрал дублирование через root как в light, инчае ломалось переключение тем-*/
 
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.

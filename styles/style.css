@@ -174,7 +174,13 @@
   grid-column: span 1;
   justify-self: flex-end;
   align-self: center;
-  max-inline-size: 47.5vi;
+  max-inline-size: 48vi;
+}
+
+@media (width <= 800px) {
+  .header__subtitle {
+    max-inline-size: 47.5vi;
+  }
 }
 
 @media (width <= 575px) {
@@ -189,6 +195,10 @@
   font-size: 18px;
   line-height: 130%;
   background-color: var(--accent-color);
+}
+
+h4.title-decor {
+  font-weight: 400;
 }
 
 .title-decor + .container__text {
@@ -261,7 +271,7 @@
 }
 
 .why {
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 66%;
   grid-template-rows: max-content;
 }
 
@@ -271,6 +281,12 @@
 
 .why__card {
   grid-column: 2 / 2;
+}
+
+@media (width <= 800px) {
+  .why {
+    grid-template-columns: 1fr 2fr;
+  }
 }
 
 @media (width <= 575px) {
@@ -323,7 +339,7 @@
 }
 
 .how {
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 66%;
   grid-template-rows: max-content;
 }
 
@@ -333,6 +349,12 @@
 
 .how__card {
   grid-column: 2 / 2;
+}
+
+@media (width <= 800px) {
+  .how {
+    grid-template-columns: 1fr 2fr;
+  }
 }
 
 @media (width <= 575px) {
